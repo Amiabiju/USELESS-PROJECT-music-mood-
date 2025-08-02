@@ -1,34 +1,38 @@
 <img width="3188" height="1202" alt="frame (3)" src="https://github.com/user-attachments/assets/517ad8e9-ad22-457d-9538-a9e62d137cd7" />
 
 
-# [Project Name] 🎯
+# [MUSIC MOOD] 🎯
 
 
 ## Basic Details
-### Team Name: [Name]
+### Team Name: Code Crusaders
 
 
 ### Team Members
-- Team Lead: [Name] - [College]
-- Member 2: [Name] - [College]
-- Member 3: [Name] - [College]
+- Member 1: Amia Koshy Biju - Rajiv Gandhi Institute of Technology 
+- Member 3: Vedika Vinod - Rajiv Gandhi Institute of Technology
 
 ### Project Description
-[2-3 lines about what your project does]
+Music Mood is a playful, pre-programmed website where users select their current mood — like Happy, Sad, Calm, Energetic, or Relaxed — and instantly receive the same meme song no matter the mood chosen by the user and an handpicked image that fits the vibe.
 
 ### The Problem (that doesn't exist)
-[What ridiculous problem are you solving?]
+Spotify too hard for lazy people!! Too many options to choose😭
 
 ### The Solution (that nobody asked for)
-[How are you solving it? Keep it fun!]
+Emotions are hard. Click a button, cry to royalty-free audio. 😭🎶
 
 ## Technical Details
 ### Technologies/Components Used
 For Software:
-- [Languages used]
-- [Frameworks used]
-- [Libraries used]
-- [Tools used]
+- Languages used : HTML – for page structure
+                   CSS – for styling and layout
+                   JavaScript – for logic and interactivity
+- Frameworks used : ❌ None – this masterpiece is 100% framework-free
+- Libraries used : Google Fonts – for pretty type
+- Tools used : VS Code – for editing code
+               Netlify – for hosting
+               Brainpower – minimal but effective
+               Hackathon Panic – as motivation 😅
 
 For Hardware:
 - [List main components]
