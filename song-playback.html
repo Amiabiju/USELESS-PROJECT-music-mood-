@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Music Mood Match</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <style>
+    body {
+      background: #141414;
+      color: white;
+      font-family: 'Segoe UI', sans-serif;
+      text-align: center;
+      padding: 40px 20px;
+    }
+
+    h1 {
+      font-size: 32px;
+      margin-bottom: 20px;
+    }
+
+    .mood-image {
+      max-width: 280px;
+      border-radius: 12px;
+      margin: 20px auto;
+      display: block;
+      box-shadow: 0 0 20px rgba(0,0,0,0.4);
+    }
+
+    audio {
+      margin-top: 30px;
+      border-radius: 12px;
+    }
+
+    .info {
+      font-size: 18px;
+      margin-top: 10px;
+      color: #ccc;
+    }
+  </style>
+</head>
+<body>
+
+  <h1 id="moodText">Your mood is...</h1>
+  <img id="moodImage" class="mood-image" src="" alt="Mood image" />
+  <p class="info">Click play to hear your soundtrack 🎶</p>
+
+  <audio id="audioPlayer" controls>
+    <source id="songSource" src="" type="audio/mpeg" />
+    Your browser does not support the audio element.
+  </audio>
+
+  <script>
+    const params = new URLSearchParams(window.location.search);
+    const mood = params.get('mood');
+
+    document.getElementById("moodText").innerText = `You selected: ${mood}`;
+
+    const moodData = {
+      Happy: {
+        img: "happy.jpg",
+        song: "m.mp3"
+      },
+      Sad: {
+        img: "sad.jpg",
+        song: "m.mp3"
+      },
+      Calm: {
+        img: "calm.jpg",
+        song: "m.mp3"
+      },
+      Energetic: {
+        img: "ener.jpg",
+        song: "m.mp3"
+      },
+      Relaxed: {
+        img: "relax.jpeg",
+        song: "m.mp3"
+      }
+    };
+
+    const selected = moodData[mood];
+    if (selected) {
+      document.getElementById("moodImage").src = selected.img;
+      document.getElementById("songSource").src = selected.song;
+      document.getElementById("audioPlayer").load(); // manual play required
+    } else {
+      document.getElementById("moodImage").style.display = "none";
+      document.querySelector(".info").innerText = "Mood not recognized.";
+    }
+  </script>
+
+</body>
+</html>

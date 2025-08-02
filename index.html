@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Music Moods</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;800&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background-color: #201A1C;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      min-height: 100vh;
+      padding: 40px 20px;
+    }
+
+    /* Styled Heading */
+    .main-heading {
+      font-size: 48px;
+      font-weight: 800;
+      margin-bottom: 40px;
+      text-align: center;
+      background: linear-gradient(to right, #ff9a9e, #fad0c4);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .card {
+      background-color: #332B2E;
+      padding: 30px;
+      border-radius: 16px;
+      max-width: 400px;
+      width: 100%;
+      text-align: center;
+    }
+
+    .card-title {
+      font-size: 24px;
+      font-weight: 600;
+      margin-bottom: 24px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+    }
+
+    .mood-button {
+      background-color: #E9A8B8;
+      border: none;
+      color: white;
+      padding: 16px;
+      font-size: 18px;
+      border-radius: 12px;
+      cursor: pointer;
+      height: 96px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      font-weight: bold;
+      transition: background 0.2s ease;
+    }
+
+    .mood-button:hover {
+      background-color: #D897A7;
+    }
+
+    .emoji {
+      font-size: 28px;
+      margin-bottom: 6px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- 🎵 Styled Heading -->
+  <h1 class="main-heading">🎵 Music Moods</h1>
+
+  <div class="card">
+    <div class="card-title">What's your mood today?</div>
+    <div class="grid">
+      <button class="mood-button" onclick="selectMood('Happy')">
+        <div class="emoji">😊</div> Happy
+      </button>
+      <button class="mood-button" onclick="selectMood('Sad')">
+        <div class="emoji">😔</div> Sad
+      </button>
+      <button class="mood-button" onclick="selectMood('Calm')">
+        <div class="emoji">😌</div> Calm
+      </button>
+      <button class="mood-button" onclick="selectMood('Energetic')">
+        <div class="emoji">⚡</div> Energetic
+      </button>
+      <button class="mood-button" onclick="selectMood('Relaxed')">
+        <div class="emoji">🧘</div> Relaxed
+      </button>
+    </div>
+  </div>
+
+  <script>
+    function selectMood(mood) {
+      window.location.href = "song-playback.html?mood=" + encodeURIComponent(mood);
+    }
+  </script>
+</body>
+</html>
