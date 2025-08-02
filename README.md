@@ -38,27 +38,16 @@ For Hardware:
 - One Emotionally Exhausted Laptop
 
 ### Implementation
-For Software:
-# Installation
-[commands]
-
-# Run
-[commands]
-
-### Project Documentation
-For Software:
+For Software:      HTML – for page structure
+                   CSS – for styling and layout
+                   JavaScript – for logic and interactivity
 
 # Screenshots 
 (https://github.com/Amiabiju/USELESS-PROJECT-music-mood-/blob/main/Screenshot%202025-08-02%20074714.png)
-select the mood
 
 (https://github.com/Amiabiju/USELESS-PROJECT-music-mood-/blob/main/Screenshot%202025-08-02%20074939.png)
-play the music
 
-## Team Contributions
-- [Name 1]: [Specific contributions]
-- [Name 2]: [Specific contributions]
-- [Name 3]: [Specific contributions]
+
 
 ---
 Made with ❤️ at TinkerHub Useless Projects 
