@@ -35,9 +35,7 @@ For Software:
                Hackathon Panic – as motivation 😅
 
 For Hardware:
-- [List main components]
-- [List specifications]
-- [List tools required]
+- One Emotionally Exhausted Laptop
 
 ### Implementation
 For Software:
